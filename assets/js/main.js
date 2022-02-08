@@ -139,12 +139,10 @@ function bigButton(){
 let bodyColor = document.getElementById('bodyColor')
 
 function randomColors(){
-    var x = Math. floor(Math. random() * 256);
-var y = Math. floor(Math. random() * 256);
-var z = Math. floor(Math. random() * 256);
-var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-console. log(bgColor);
-document. body. style. background = bgColor;
+    let red = Math.floor(Math. random() * 256);
+    let green = Math.floor(Math. random() * 256);
+    let blue = Math.floor(Math. random() * 256);
+     bodyColor.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
 }
 
 Math.random();
